@@ -1,0 +1,52 @@
+#fondo {
+    background-color: rgb(28, 71, 107);
+    width: 970px;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 10px;
+}
+
+#java {
+    color: seashell;
+    background-color: red;
+    border-radius: 10px;
+    height: 70px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.leftbox {
+    background-color: rgb(179, 210, 219);
+    padding: 10px;
+    width: 200px;
+    border-radius: 10px;
+    left: 200px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.main-content {
+    background-color: rgb(15, 37, 44);
+    height: 650px;
+    width: 715px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+p {
+    color: lightgoldenrodyellow;
+}
+
+.footer {
+    background-color: rgb(101, 102, 102);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+span {
+    color: lightskyblue;
+}

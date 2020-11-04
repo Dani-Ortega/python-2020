@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+    <title>HTML | Blog Ficticio</title>
+</head>
+
+<body>
+    <div id=encabezado>
+        <img src="jordan-logo.png" alt="jordanlogo.png" width="50" height="50">
+        <hr>
+        <h1 style="background-color:brown;">MICHAEL JORDAN</h1>
+        <hr>
+        <br>
+        <img src="jordanbody.jpg" alt="michaeljordan.jpg" width="400" height="300">
+    </div>
+    <br>
+    <div id=biografía>
+        <pre><b>Michael Jeffrey Jordan (nacido el 17 de febrero de 1963) es un jugador de baloncesto 
+profesional estadounidense, atleta olímpico, hombre de negocios y actor. Considerado 
+uno de los mejores jugadores de baloncesto de la historia, Michael Jordan dominó el 
+deporte desde mediados de la década de 1980 hasta finales de la década de 1990. 
+Dirigió a los Chicago Bulls a seis campeonatos de la Asociación Nacional de Baloncesto 
+y ganó cinco veces el Premio al Jugador Más Valioso de la NBA. Con cinco MVPs de la tem-
+porada regular y tres MVPs de All-Star, Jordan se convirtió en el jugador más condecorado 
+de la NBA. Entre sus seis campeonatos de la NBA, restaurantes, participación en los Charlo-
+tte Hornets, patrocinio corporativo con Nike y acuerdos de patrocinio con Gatorade, Hanes 
+y Upper Deck, el valor neto estimado de Michael Jordan es de más de mil millones de dólares.</b></pre>
+    </div>
+    <hr>
+    <div id=palmarés>
+        <h3 style="background-color:brown;">PALMARÉS</h3>
+        <hr>
+        <table>
+            <thead>
+                <tr>
+                    <th>Año</th>
+                    <th>PPG</th>
+                    <th>MVP</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1990-91</td>
+                    <td>31.5</td>
+                    <td>SÍ</td>
+                </tr>
+                <tr>
+                    <td>1991-92</td>
+                    <td>30.1</td>
+                    <td>SÍ</td>
+                </tr>
+                <tr>
+                    <td>1992-93</td>
+                    <td>32.6</td>
+                    <td>NO</td>
+                </tr>
+                <tr>
+                    <td>1995-96</td>
+                    <td>30.1</td>
+                    <td>SÍ</td>
+                </tr>
+                <tr>
+                    <td>1996-97</td>
+                    <td>30.1</td>
+                    <td>SÍ</td>
+                </tr>
+                <tr>
+                    <td>1997-98</td>
+                    <td>30.1</td>
+                    <td>SÍ</td>
+                </tr>
+            </tbody>
+        </table>
+        <ul>
+            <li>
+                <b>1984 - 1983 Chicago Bulls</b>
+            </li>
+            <li>
+                <b>1995 - 1998 Chicago Bulls</b>
+            </li>
+            <li>
+                <b>2001 - 2003 Washington Wizard</b>
+            </li>
+        </ul>
+    </div>
+    <div id=jugadas>
+        <hr>
+        <h3 style="background-color:brown;">MEJORES JUGADAS</h3>
+        <hr>
+        <a href="https://www.youtube.com/watch?v=oUtAv1VjpJ8"><b>Presiona aquí para ver recopilación</b></a>
+        <hr>
+    </div>
+    <div id=encuesta>
+        <h3 style="background-color: brown;"> POR FAVOR, CONTESTA ESTA BREVE ENCUESTA</h3>
+        <hr>
+        <form action="contacto.html" method="POST">
+            <p><b>¿Quisieras estar al tanto de nuestras últimas novedades?</b></p>
+            <label for=Correo><b>Correo:</b></label>
+            <input type="email" id=Correo name=Correo>
+            <br>
+            <br>
+            <input type="radio" id=opcion1 name=Género>
+            <label for=opcion1>Si por favor, envíame montones de correo</label>
+            <br>
+            <input type="radio" id=opcion2 name=Género>
+            <label for=opcion2>No por favor, no me mandes ningún correo</label>
+            <br>
+            <p><b>¿Cómo supiste de nosotros?</b></p>
+            <input type="checkbox" id=facebook name=facebook>
+            <label for=facebook>Facebook</label>
+            <br>
+            <input type="checkbox" id=periodico name=periodico>
+            <label for=periodico>El periódico</label>
+            <br>
+            <input type="checkbox" id=contacto name=contacto>
+            <label for=contacto>Un contacto</label> </form>
+        <br>
+        <input type="submit" value="Envíar">
+
+    </div>
+</body>
+
+</html>

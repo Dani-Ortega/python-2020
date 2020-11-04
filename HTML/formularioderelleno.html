@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--idioma-->
+
+<head>
+    <meta charset="UTF-8">
+    <!--codificación de caracteres utilizada (se sugiere mencionar siempre la codificación)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML | Formulario</title>
+</head>
+
+<body>
+    <div id="cuerpoprincipal">
+        <form action="contacto.html" method="GET">
+            <!-- los method GET y POST sirven para ocultar o dejar visible respectivamente los parametros de la url-->
+            <h2 id=titulo>FORMULARIO DE REGISTRO</h2>
+            <!--tags <for> (label) e <id> (input) deben llevar los mismos nombres o contenido-->
+            <label for=Nombres><b>Nombres   :</b></label>
+            <input type="text" id=Nombres name=Nombres>
+            <!--ninguna entrada <id> puede repetirse-->
+            <br>
+            <br>
+            <label for=Apellidos><b>Apellidos  :</b></label>
+            <input type="text" id=Apellidos name=Apellidos>
+            <br>
+            <br>
+            <label for=Correo><b>Correo    :</b></label>
+            <input type="text" id=Correo name=Correo>
+            <br>
+            <br>
+            <label for=Password><b>Contraseña :</b></label>
+            <input type="password" id=Password name=Contraseña>
+            <br>
+            <br>
+            <label for=Passwordcon><b>Confirmar :</b></label>
+            <input type="password" id=Passwordcon name=Passwordcon>
+            <br>
+            <br>
+            <label for=Cumpleaños><b>Fecha de Nacimiento:</b></label>
+            <input type="date" id=Cumpleaños name=Cumpleaños>
+            <br>
+            <br>
+            <label for=GéneroH><b>Género :</b>    Hombre</label>
+            <input type="radio" id=GéneroH name=Género>
+            <label for=GéneroM>Mujer</label>
+            <input type="radio" id=GéneroM name=Género>
+            <label for=GéneroP>Prefiero no decirlo</label>
+            <input type="radio" id=GéneroP name=Género>
+            <br>
+            <br>
+            <p><b>Una breve descripción de ti:</b></p>
+            <pre> <textarea id=descrip name=descrip rows="10" cols="49"></textarea></pre>
+            <br>
+            <label for="lenguajes"><b>Su lenguaje favorito:</b></label>
+            <select name="lenguajes" id="lenguajes">
+            <option value="prede">Seleccione su opcion favorita</option>
+            <option value="C++">C++</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="PHP">PHP</option>
+            <option value="Python">Phyton</option>
+            <option value="SQL">SQL</option>
+            <option value="Swift">Swift</option>
+            </select>
+            <br>
+            <br>
+            <input type="reset" value="Reestablecer">
+            <br>
+            <br>
+            <input type="submit" value="ENVÍAR">
+        </form>
+    </div>
+</body>
+
+</html>
