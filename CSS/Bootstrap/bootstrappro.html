@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="./Jumbotron Template for Bootstrap_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+    <title>Bootstrap</title>
+
+    <!--styles for this template-->
+
+    <link href="./Jumbotron Template for Bootstrap_files/jumbotron.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Jumbotron Template for Bootstrap_files/css" media="all">
+    <link rel="stylesheet" href="./Jumbotron Template for Bootstrap_files/css" media="all">
+    <style data-styled="" data-styled-version="4.4.1"></style>
+    <script data-avast-pam="y" type="text/javascript" name="AVAST_PAM_submitInjector">
+        (function _submitInjector() {
+            var f = document.querySelectorAll("form")[0]; // eslint-disable-line no-undef
+
+            if (!f._avast_submit) {
+                f._avast_submit = f.submit;
+            }
+
+            try {
+                Object.defineProperty(f, "submit", {
+                    get() {
+                        return function(prev_submit) {
+                            prev_submit.call(this);
+
+                            if (this._avast_inside_submit) {
+                                return;
+                            }
+
+                            this._avast_inside_submit = true;
+                            var evt = document.createEvent("CustomEvent");
+                            evt.initEvent("scriptsubmit", true, true); // bubbling & cancelable
+
+                            this.dispatchEvent(evt);
+                            delete this._avast_inside_submit;
+                        }.bind(this, this._avast_submit);
+                    },
+
+                    set(submitFunc) {
+                        this._avast_submit = submitFunc;
+                    }
+
+                });
+            } catch (ex) { // ignored
+            }
+        })();
+    </script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">D A N O R  -  calefacciones</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Presentación <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">¿Cómo funciona nuestro sistema de calefacción?</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Nuestro Trabajo
+                </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Calefacción central</a>
+                        <a class="dropdown-item" href="#">Mantención a sistemas de caldera</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Tipos de calderas y estufas</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Climatización</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-3">¡Elige el calor preferido del sur de Chile!</h1>
+            <p class="lead">Calefacción eficiente, máximo rendimiento y optimización.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Responsivo -->
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Calderas industriales</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                </p>
+                <p><a class="btn btn-secondary" href="https://getbootstrap.com/docs/4.1/examples/jumbotron/#" role="button">View details »</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Estufa tipo calderas</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                </p>
+                <p><a class="btn btn-secondary" href="https://getbootstrap.com/docs/4.1/examples/jumbotron/#" role="button">View details »</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Cocinas combustión lenta</h2>
+                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet
+                    risus.
+                </p>
+                <p><a class="btn btn-secondary" href="https://getbootstrap.com/docs/4.1/examples/jumbotron/#" role="button">View details »</a></p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="container-fluid">
+
+            <button type="button" class="btn btn-lg btn-primary" disabled>Primary button</button>
+            <button type="button" class="btn btn-secondary btn-lg" disabled>Button</button>
+        </div>
+
+        <hr>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script>
+            window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+        </script>
+        <script src="../../assets/js/vendor/popper.min.js"></script>
+        <script src="../../dist/js/bootstrap.min.js"></script>
+        <div class="notranslate" style="position: absolute; top: 0; right:0;" id="vd-root-d19608294"></div>
+
+
+</body>
+
+
+</html>
