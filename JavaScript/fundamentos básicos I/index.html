@@ -1,16 +1,18 @@
 <html>
+
 <script>
-    function retSum(array) {
-        var suma = [] //1
-        for (let i = 0; i <= array.length; i++) { //0>1
-            var suma = (suma + array[i]); // 0 + 1 
+    function pares() {
+        let par = 0;
+        for (let index = 1; index <= 1000; index++) {
+            if (index % 2 == 0) {
+                par = par + index
+            }
+
         }
-
-
-        console.log(suma);
+        return par;
     }
 
-    console.log(retSum([1, 2, 5]))
+    console.log(pares());
 </script>
 
 </html>
