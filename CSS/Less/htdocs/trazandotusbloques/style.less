@@ -1,0 +1,66 @@
+@width: 100%;
+@height: 100%;
+
+@backgroundgeneral: silver;
+@headercolor: green;
+@navegationcolor: blue;
+@contentcolor: red;
+@subcontentcolor: yellow;
+@advertisementcolor: purple;
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#wrapper {
+    width: @width;
+    height: 660px;
+    background-color: @backgroundgeneral;
+    margin: 15px auto;
+    padding: 15px;
+}
+
+#header {
+    min-height: 150px;
+    background-color: @headercolor;
+    margin: 15px;
+    padding: 15px;
+}
+
+#navigation {
+    min-height: 250px;
+    width: @width;
+    background-color: @navegationcolor;
+    margin: 15px;
+    padding: 15px;
+}
+
+#main_content {
+    min-height: 400px;
+    width: @width;
+    background-color: @contentcolor;
+    margin: 15px;
+    padding: 15px;
+    position: relative;
+    left: 270px;
+    bottom: 295px;
+}
+
+.subcontents {
+    min-height: 200px;
+    width: 210px;
+    background-color: @subcontentcolor;
+    margin: 5px;
+    float: left;
+}
+
+#advertisement {
+    min-height: 130px;
+    width: 650px;
+    background-color: @advertisementcolor;
+    margin: 5px;
+    position: relative;
+    top: 220px;
+}

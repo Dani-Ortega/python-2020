@@ -4,7 +4,7 @@
 
 /**1**/
 
-functioncopy a() {
+functioncopy(a) {
 
     return 35;
 }
