@@ -1,24 +1,20 @@
 <html>
 <script>
-    for (let i = 0; i < arr.length; i++) {
-        let impar = 0;
-        let par = 0;
-        if (arr[i] % 2 == 0) {
-            let par = par + 1;
-            if (par >= 3) {
-                console.log("¡Qué imparcial!");
+    function dobleVision(array) {
+        arraynew = [];
+        for (let i = 0; i < array.length; i++) {
+            if (i % 2 == 0) {
+                arraynew.push(array[i]);
+                arraynew.push(array[i]);
+            } else {
+                arraynew.push(array[i]);
             }
         }
-
-        if (arr[i] % 2 != 0) {
-            let impar = impar + 1;
-            if (impar >= 3) {
-                console.log("¡Es para bien!");
-            }
-        }
+        return arraynew;
     }
-    console.log(pareseImpares([1, 7, 9, 14, 8, 6, 24, 14, 8, 62]));
+    console.log(dobleVision([4, "Ulysses", 42, false]));
 </script>
 
-</html>t>
+</html>
+
 </html>

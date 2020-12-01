@@ -143,8 +143,16 @@ console.log(segundoMasGrande([42, 1, 4, 3.14, 7]));
 //Crea una función que cambie un array dado duplicando cada uno de sus elementos en una posición par, 
 //y manteniendo el orden original. Convierte [4, "Ulysses", 42, false] a [4,4, "Ulysses", 42, 42, false].
 
-function dobleProblemaPar(params) {
-
+function dobleProblemaPar(array) {
+    var array2 = [];
+    for (let index = 0; index < array.length; index++) {
+        if (index % 2 == 0) {
+            array2.push(array[index]);
+            array2.push(array[index]);
+        } else {
+            array2.push(array[index]);
+        }
+    }
+    return array2;
 }
-
-console.log(dobleProblemaPar([4, "Ulysses", 42, false]))
+console.log(dobleProblemaPar([4, "Ulysses", 42, false]));
