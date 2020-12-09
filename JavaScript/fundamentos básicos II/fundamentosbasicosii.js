@@ -114,14 +114,45 @@ function pareseImpares(arr) {
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] % 2 == 0) {
             par = par + 1;
-            console.log("¡Es para bien!")
+            if (par >= 3)
+                console.log("¡Es para bien!")
         }
 
 
         if (arr[i] % 2 != 0) {
             impar = impar + 1;
-            console.log("¡Qué imparcial!")
+            if (impar >= 3)
+                console.log("¡Qué imparcial!")
         }
+
+    }
+
+}
+
+console.log(pareseImpares([1, 7, 9, 14, 8, 6, 24, 14, 8, 62]));
+
+//2
+function pareseImpares(arr) {;
+    for (let i = 0; i < arr.length; i++) {
+        let impar = 0;
+        let par = 0;
+        if (arr[i] % 2 == 0) {
+            let par = par + 1;
+            if (par >= 3) {
+                console.log("¡Qué imparcial!");
+            }
+
+        }
+
+
+        if (arr[i] % 2 != 0) {
+            let impar = impar + 1;
+            if (impar >= 3) {
+                console.log("¡Es para bien!");
+            }
+
+        }
+
 
     }
 
@@ -157,7 +188,7 @@ console.log(increSegundos([2, 3, 8, 9, 1, 16, 5, 7]));
 //Pista: ¿For loops solo puede ir hacia adelante?
 
 function longitudePrevias(arreglo) {
-    for (let i = 2; i < arreglo.length; i--) {
+    for (let i = 2; i > 0; i--) {
         arreglo[i] = arreglo[i - 1].length; //arreglo[2] = arreglo[i]
 
 

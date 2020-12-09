@@ -18,6 +18,8 @@ INSERT INTO `tabla1` (`nombre`, `apellido`, `covid`) VALUES ('emiliano', 'zapata
 
 
 
+
+
 /*!SE PUEDE OMITIR VALOR AUTOINCREMENTAL*/;
 INSERT INTO `guillon` (`nombre`, `apellido`, `covid`) VALUES ('Elsa', 'Zapata', '0');
 

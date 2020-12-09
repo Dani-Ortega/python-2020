@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script type=text/javascript>
+        $(document).ready(function() {
+
+            alert('Estas trabajando en jQuery');
+
+            $('h1, .blue');
+
+            $('h1').html('donnalasummer');
+
+            $('h1').click(function() {
+                $('p').toggle();
+            });
+
+            //efectos
+
+            $('#hide').click(function() {
+                $('li').hide();
+            });
+
+            $('#show').click(function() {
+                $('li').show();
+            });
+
+            //metodo manipulación, agrega y/o cambia textos y html en tu documento
+
+            $('h3').hover(function() {
+                $('h2').text('Tony Igy hizo un temazo: astronomia');
+            }, function() {
+                alert('lograste cambiar el h3 clickeando el h2, wena ctm')
+            });
+
+            $('#append').click(function() {
+                $('.resultado').append('<h3>vuela, vuela !</h3>');
+            });
+
+            //Metodo css
+
+            $('li').click(function() {
+                $('button').css('background-color', 'green');
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <h1>DONNA SUMMER MAESTRA DEL DISCO Y EL EDM!</h1>
+    <P>"Le Freak" was written after a huge disappointment the pair experienced after being denied entry to Studio 54 to see Grace Jones perform. That fateful night was New Year's Eve 1977 and the duo had been invited by Grace to see her show and then meet
+        to discuss a recording collaboration.</P>
+
+    <h2>Tony Igy</h2>
+    <h3>Astronomia</h3>
+
+    <li>
+        rasputin
+    </li>
+    <li>
+        el zar
+    </li>
+    <li>
+        le freak
+    </li>
+    <li>
+        donna
+    </li>
+
+
+    <button id="hide">SUMMER WITH DONNA (hide)</button>
+    <button id="show">DONNA EAT DONUT (show)</button>
+    <button id="append">DONNA IN SUMMER (append)</button>
+    <div class="resultado"></div>
+
+
+</body>
+
+</html>
