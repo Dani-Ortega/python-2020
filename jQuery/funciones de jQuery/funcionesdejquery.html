@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#addclass').click(function() {
+                $('.red').css('background-color', 'red');
+            })
+            $('#slidetoggle').click(function() {
+                $('img').toggle();
+            })
+            $('#append').click(function() {
+                $('.nuevotext').append('<h3>vuela, vuela !</h3>');
+            });
+            $('#hide').click(function() {
+                $('h2').hide();
+            });
+            $('#show').click(function() {
+                $('h2').show();
+            });
+            $('li').hover(function() {
+                $('#text').text('Soy yo, yo soy el texto');
+            });
+
+            $("div").click(function() {
+                $(this).css({
+                    borderStyle: "inset",
+                    cursor: "wait"
+                });
+                $("input").slideDown(1000, function() {
+                    $(this)
+                        .css("border", "2px red inset")
+                        .filter(".middle")
+                        .css("background", "yellow")
+                        .focus();
+                    $("div").css("visibility", "hidden");
+                });
+            });
+        });
+    </script>
+    <title>My jQuery basic assignament!</title>
+</head>
+
+<body>
+    <h1>AddClass</h1>
+    <button id="addclass">AddClass</button>
+    <p class="red">Click the button to add class 'red' to this paragraph</p>
+    <br>
+    <h1>Slidetoggle</h1>
+    <button id="slidetoggle">Slidetoggle</button>
+    <img src="jquery.png" alt="jquery.png">
+    <br>
+    <h1>Append</h1>
+    <button id="append">Append</button>
+    <p>Click the button to append a new paragraph!</p>
+    <div class=nuevotext></div>
+    <h1>Hide & Show!</h1>
+    <h2>Onta bebe aqui ta bebe</h2>
+    <button id="hide">HIDEEE!</button>
+    <button id="show">SHOOOW!</button>
+    <br>
+    <br>
+    <h1 id='text'>TEXT</h1>
+    <li>pon el cursor aquí e invoca el texto </li>
+    <br>
+    <br>
+    <div>PUSH!</div>
+    <input type="text">
+    <input type="text" class="middle">
+    <input type="text">
+
+
+</body>
+
+</html>
