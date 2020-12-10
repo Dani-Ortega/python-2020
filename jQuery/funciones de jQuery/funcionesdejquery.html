@@ -5,6 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        .slide {
+            background: #3b9b48;
+            margin: 3px;
+            width: 80px;
+            height: 40px;
+            display: none;
+            border-radius: 3px;
+        }
+        
+        #imgjq {
+            height: 200px;
+            width: 200px;
+        }
+        
+        .up {
+            background: #2b7277;
+            margin: 3px;
+            width: 80px;
+            height: 40px;
+            border-radius: 3px;
+        }
+        
+        #pfade {
+            width: 400px;
+            height: 90px;
+        }
+        
+        .fade {
+            width: 200px;
+            height: 230px;
+            font-size: 36px;
+            background: rgb(241, 241, 241);
+            display: none;
+        }
+        
+        #temuko {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
     <script>
         $(document).ready(function() {
             $('#addclass').click(function() {
@@ -26,53 +67,142 @@
                 $('#text').text('Soy yo, yo soy el texto');
             });
 
-            $("div").click(function() {
-                $(this).css({
-                    borderStyle: "inset",
-                    cursor: "wait"
-                });
-                $("input").slideDown(1000, function() {
-                    $(this)
-                        .css("border", "2px red inset")
-                        .filter(".middle")
-                        .css("background", "yellow")
-                        .focus();
-                    $("div").css("visibility", "hidden");
-                });
+            $('#down').click(function() {
+                if ($('.slide').first().is(":hidden")) {
+                    $('.slide').slideDown("slow");
+                } else {
+                    $('.slide').hide();
+                }
+            })
+
+            $('#clickup').click(function() {
+                if ($('.up').first().is(":hidden")) {
+                    $('.up').show("slow");
+                } else {
+                    $('.up').slideUp();
+                }
             });
+
+            $('#palanca').click(function() {
+                $('#stoggle').slideToggle("slow");
+            });
+
+            $('#fadein').click(function() {
+                $('.fade').fadeIn(3000, function() {
+                    $('#temuko').fadeIn(100);
+                });
+                return false;
+            });
+
+            $('#desvanecer').click(function() {
+                $('#desvanecer').fadeOut("faster");
+            });
+
+            $('#befor').before($('b'));
+
+            $('#after').after("<b>habladurías del mundo</b>");
+
+            $('#html').html("<span>Hola me creó el <b>.html</b></span>");
+
+            $('#check1')
+                .change(function() {
+                    var $input = $(this);
+                    $('#pcheck').html(".attr( 'checked' ): <b>" + $input.attr("checked") + "</b><br>" +
+                        ".prop( 'checked' ): <b>" + $input.prop("checked") + "</b><br>" +
+                        ".is( ':checked' ): <b>" + $input.is(":checked") + "</b>");
+                })
+                .change();
+
+            $("input")
+                .keyup(function() {
+                    var value = $(this).val();
+                    $('#pval').text(value);
+                })
+                .keyup();
         });
     </script>
     <title>My jQuery basic assignament!</title>
 </head>
 
 <body>
-    <h1>AddClass</h1>
+    <h1>.AddClass</h1>
     <button id="addclass">AddClass</button>
     <p class="red">Click the button to add class 'red' to this paragraph</p>
     <br>
-    <h1>Slidetoggle</h1>
+    <h1>.Slidetoggle</h1>
     <button id="slidetoggle">Slidetoggle</button>
-    <img src="jquery.png" alt="jquery.png">
+    <img id="imgjq" src="jquery.png" alt="jquery.png">
     <br>
-    <h1>Append</h1>
+    <h1>.Append</h1>
     <button id="append">Append</button>
     <p>Click the button to append a new paragraph!</p>
     <div class=nuevotext></div>
-    <h1>Hide & Show!</h1>
+    <h1>.Hide & Show!</h1>
     <h2>Onta bebe aqui ta bebe</h2>
     <button id="hide">HIDEEE!</button>
     <button id="show">SHOOOW!</button>
     <br>
     <br>
-    <h1 id='text'>TEXT</h1>
+    <h1 id='text'>.TEXT</h1>
     <li>pon el cursor aquí e invoca el texto </li>
     <br>
     <br>
-    <div>PUSH!</div>
-    <input type="text">
-    <input type="text" class="middle">
-    <input type="text">
-
+    <h1>.slideDown</h1>
+    <button id="down">Click me!</button>
+    <br>
+    <br>
+    <div class="slide"></div>
+    <div class="slide"></div>
+    <div class="slide"></div>
+    <br>
+    <br>
+    <h1>.slideUp</h1>
+    <button id="clickup">Click me!</button>
+    <br>
+    <br>
+    <div class="up"></div>
+    <div class="up"></div>
+    <div class="up"></div>
+    <br>
+    <br>
+    <h1>.slideToggle</h1>
+    <button id="palanca">Toggle</button>
+    <p id="stoggle"> Kuchiyose no Jutsu</p>
+    <br>
+    <br>
+    <h1>.fadeIn</h1>
+    <p id="pfade">
+        ¿Cuál es le equipo más grande la vida?
+        <button id="fadein">clickea</button>
+        <div class="fade"><img id="temuko" src="deportestemuco.jpg" alt=""></div>
+    </p>
+    <br>
+    <br>
+    <h1>.fadeOut</h1>
+    <p id="desvanecer">Si me clickeas me desvanezco</p>
+    <br>
+    <br>
+    <h1>.Before</h1>
+    <p id="befor"> qué es lo que dije?</p><b>Python, dijiste</b>
+    <br>
+    <br>
+    <h1>.After</h1>
+    <p id="after"> qué es lo que diré?</p>
+    <br>
+    <br>
+    <h1>.Html</h1>
+    <div id="html"></div>
+    <br>
+    <br>
+    <h1>.Attr</h1>
+    <input id="check1" type="checkbox" checked="checked">
+    <label for="check1">Check me</label>
+    <p id="pcheck"></p>
+    <br>
+    <br>
+    <h1>.Val</h1>
+    <input type="text" value="some text">
+    <p id="pval"></p>
 
 </body>
 
