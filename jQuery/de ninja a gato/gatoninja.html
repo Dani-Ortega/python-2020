@@ -1,0 +1,41 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        .container {
+            glyph-orientation-horizontal: initial;
+        }
+        
+        img {
+            margin-top: 5px;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            $('img').click(function() {
+                var gatito = $(this).attr('data-alt-src');
+                $(this).attr('data-alt-src', $(this).attr('src'));
+                $(this).attr('src', gatito);
+            });
+        });
+    </script>
+    <title>De Ninja a Gatito</title>
+</head>
+
+<body>
+    <div class="container">
+        <img src="ninja0.png" data-alt-src='cat0.png' alt="">
+        <br>
+        <img src="ninja1.png" data-alt-src='cat1.png' alt="">
+        <br>
+        <img src="ninja2.png" data-alt-src='cat2.png' alt="">
+        <br>
+        <img src="ninja3.png" data-alt-src='cat3.png' alt="">
+        <br>
+        <img src="ninja4.png" data-alt-src='cat4.png' alt="">
+        <br>
+    </div>
+</body>
+
+</html>
