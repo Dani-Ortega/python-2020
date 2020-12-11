@@ -1,0 +1,28 @@
+cambiar a directorio padre
+cd ..
+
+cambiar o entrar a directorio en uso
+cd /
+cambiar entre carpetas de un directorio
+cd nombre_de_carpeta
+
+crear nueva carpeta
+mkdir nueva_carpeta
+
+crear nuevo archivo
+touch nuevo_archivo.js
+
+eliminar archivo
+rm nombre_archivo.txt
+
+mover archivos entre carpetas
+mv style.css ../style.css
+
+copiar
+cp archivo.html archivo1.html
+
+eliminar carpeta con archivos
+rm -rf nombre_directorio
+
+
+
