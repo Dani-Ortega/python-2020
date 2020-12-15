@@ -17,7 +17,8 @@
         #killua {
             margin-left: 80px;
             margin-top: 30px;
-            border-style: solid;
+            height: 200px;
+            width: 200px;
         }
         
         .title {
@@ -39,7 +40,7 @@
     <script>
         $(document).ready(function() {
             $('img').click(function() {
-                $(this).hide();
+                $(this).slideUp();
             });
             $('button').click(function() {
                 $('img').show();
