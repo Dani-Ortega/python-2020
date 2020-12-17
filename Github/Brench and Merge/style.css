@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+    width: 790px;
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+#texts {
+    width: 750px;
+}
+
+#imgs {
+    display: inline-block;
+}
+
+img {
+    width: 375px;
+    height: 375px;
+    border-style: solid;
+    border-color: white;
+}
