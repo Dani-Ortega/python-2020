@@ -1,0 +1,23 @@
+body {
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/667e2c66-9a0b-4cd5-b326-7ec5bc251d6e/dd9q1ge-7b95193a-ca00-476b-98f6-8018362534eb.png/v1/fill/w_1326,h_603,q_70,strp/gotta_draw__em_all__generation_1_reloaded_collab_by_krisantyne_dd9q1ge-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0yNTAwIiwicGF0aCI6IlwvZlwvNjY3ZTJjNjYtOWEwYi00Y2Q1LWIzMjYtN2VjNWJjMjUxZDZlXC9kZDlxMWdlLTdiOTUxOTNhLWNhMDAtNDc2Yi05OGY2LTgwMTgzNjI1MzRlYi5wbmciLCJ3aWR0aCI6Ijw9NTUwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.ZoABPg4jXuHq6-ZckwcX6iQRij4QXNifxhLwWeajF-0);
+}
+
+img {
+    height: 130px;
+    width: 373px;
+}
+
+#pokemon {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(rgb(255, 204, 0) 0%, rgb(243, 188, 9) 50%, rgb(0, 102, 179) 100%);
+    margin-left: 12px;
+    margin-bottom: 12px;
+    border-style: outset;
+    border-color: rgb(0, 102, 179);
+    border-radius: 5px;
+}
+
+#title {
+    text-align: center;
+}

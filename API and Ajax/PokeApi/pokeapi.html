@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/5/51/Pokebola-pokeball-png-0.png">
+    <link rel="stylesheet" href="pokestyle.css">
+    <title>API | Pokemon</title>
+    <script>
+        $(document).ready(function() {
+            for (i = 1; i <= 151; i++) {
+                $('#container').append('<img id=pokemon src=http://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/' + i + '.png>');
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <div id="title">
+        <img class="logo" src="pokelogo.png" alt="">
+    </div>
+    <div id="container">
+
+    </div>
+</body>
+
+</html>
