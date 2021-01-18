@@ -1,0 +1,49 @@
+INSERT( para insertar datos en nuestras tablas)
+
+-- para iniciar mysql 
+mysql -u root -p
+
+-- mostrar bases de datos
+show databases;
+
+--elegir la base de datos a utilizar
+use nombre_base_datos;
+
+-- mostrar tablas guardada en la base de datos
+show tables;
+
+-- visualizar filas de la tabla
+describe nombre_tabla;
+
+--insertar datos en la tabla
+ INSERT INTO tabla1 (id, nombre, edad) values (4, "Marisa", 24);
+
+--visualizar y corroborar los datos insertados
+select * from tabla1;
+
+
+SELECT (para seleccionar y visualizar elementos)
+
+-- para visualizar especificamente un dato de una fila
+select nombre_fila from nombre_tabla;
+
+-- también se puede traer más de un elemento para visualizar
+select id, nombre from tabla1;
+
+--para traer elementos con filtros
+select * from tabla1
+where nombre_filtro
+
+
+UPDATE (actualizar registros de las BD)
+-- se sugiere especificar el cambio a través del id ya que este es un registro único para cada dato insertado
+update tabla1
+set nombre = "Andrea" 
+where id = 4;
+
+
+DELETE(eliminar un registro)
+
+delete from nombre_tabla where id = 4;
+
+

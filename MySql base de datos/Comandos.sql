@@ -93,6 +93,14 @@ update tabla1
 set nombre = "Arturo" 
 where id = 5;
 
+update tabla1
+set nombre = "Marisa" 
+where id = 4;
+
+-- para buscar info, sin tener claro como buscar con la palabra debida (porcentaje de info)
+select * from languages where language like '%loven%';
+
+
 
 
 
